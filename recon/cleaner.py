@@ -19,5 +19,7 @@ def clean_parcels(df: pd.DataFrame) -> pd.DataFrame:
     out["clean_owner"] = out["owner"].map(normalize_text)
     out["clean_village"] = out["village"].map(normalize_text)
     # Blank or non-numeric -> NaN (treated as "area missing" later)
-    out["clean_area_sqm"] = pd.to_numeric(out["area_sqm"].str.strip(), errors="coerce")
+    # "1,080" -> 1080; blank or non-numeric ("N/A") -> NaN, reported later
+    out["clean_area_sqm"] = pd.to_numeric(
+        out["area_sqm"].str.replace(",", "").str.strip(), errors="coerce")
     return out

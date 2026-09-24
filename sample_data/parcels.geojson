@@ -29,6 +29,7 @@
     {"type":"Feature","properties":{"parcel_id":"BLR-025","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5978,12.9736],[77.5984,12.9736],[77.5984,12.9739],[77.5978,12.9739],[77.5978,12.9736]]]}},
     {"type":"Feature","properties":{"parcel_id":"BLR-026","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9742],[77.5949,12.9742],[77.5949,12.9748],[77.5946,12.9748],[77.5946,12.9742]]]}},
     {"type":"Feature","properties":{"parcel_id":"BLR-027","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5951,12.9742],[77.5954,12.9742],[77.5954,12.9748],[77.5951,12.9748],[77.5951,12.9742]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-028","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5956,12.9742],[77.5959,12.9742],[77.5959,12.9748],[77.5956,12.9748],[77.5956,12.9742]]]}}
+    {"type":"Feature","properties":{"parcel_id":"BLR-028","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5956,12.9742],[77.5959,12.9742],[77.5959,12.9748],[77.5956,12.9748],[77.5956,12.9742]]]}},
+    {"type":"Feature","properties":{"parcel_id":"BLR-029","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5961,12.9742],[77.5967,12.9742],[77.5967,12.9745],[77.5964,12.9748],[77.5961,12.9748],[77.5961,12.9742]]]}}
   ]
 }

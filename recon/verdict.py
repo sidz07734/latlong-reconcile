@@ -13,7 +13,7 @@ DEFAULT_TOLERANCE = 0.10  # ±10%
 def area_check(csv_area: float, map_area: float, tolerance: float) -> tuple[bool, str]:
     """Compare CSV area to map area. Returns (ok, human-readable explanation)."""
     if csv_area is None or math.isnan(csv_area):
-        return False, "area_sqm missing in CSV, cannot verify"
+        return False, "area_sqm missing or non-numeric in CSV, cannot verify"
     diff_pct = (csv_area - map_area) / map_area * 100
     ok = abs(diff_pct) <= tolerance * 100
     word = "within" if ok else "outside"

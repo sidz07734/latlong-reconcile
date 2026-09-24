@@ -9,7 +9,13 @@ from recon.verdict import FUZZY_MATCH, ID_MATCH_AREA_MISMATCH, MATCH, NO_MATCH
 
 ORIGINAL_COLUMNS = ["parcel_id", "owner", "area_sqm", "village"]
 ADDED_COLUMNS = ["verdict", "matched_parcel_id", "reason"]
-
+# simplestyle-spec colours: GitHub and geojson.io colour polygons by these
+VERDICT_COLOURS = {
+    MATCH: "#2e7d32",                   # green
+    ID_MATCH_AREA_MISMATCH: "#ef6c00",  # orange
+    FUZZY_MATCH: "#f9a825",             # yellow
+    "NoCsvRecord": "#9e9e9e",           # grey
+}
 
 def write_csv(rows: pd.DataFrame, out_dir: Path) -> Path:
     """Original CSV rows (untouched) + verdict, matched_parcel_id, reason."""
@@ -22,7 +28,11 @@ def write_csv(rows: pd.DataFrame, out_dir: Path) -> Path:
 def write_geojson(polygons: gpd.GeoDataFrame, out_dir: Path) -> Path:
     """Input polygons (still lon/lat) + verdict, for colour-coding on a map."""
     path = out_dir / "report.geojson"
-    polygons.to_crs("EPSG:4326").to_file(path, driver="GeoJSON")
+    styled = polygons.to_crs("EPSG:4326")
+    styled["fill"] = styled["verdict"].map(VERDICT_COLOURS)
+    styled["stroke"] = styled["fill"]
+    styled["fill-opacity"] = 0.6
+    styled.to_file(path, driver="GeoJSON")
     return path
 
 
