@@ -94,6 +94,17 @@ tests/                18 pytest tests
 sample_data/          33-row CSV + 29-polygon GeoJSON covering every case
 ```
 
+## Tests
+
+Not required by the brief, but added to prove correctness and lock in the design decisions. Run with `python -m pytest -q` (18 tests).
+
+| File | What it checks |
+|---|---|
+| `test_matcher.py` | Levenshtein edits (swap/insert/delete); exact match wins; unique fuzzy match; ties are reported as ambiguous, never guessed; a typo cannot take a parcel that already has an exact owner |
+| `test_verdict.py` | All four verdicts; exactly ±10% counts as Match; missing area → IdMatchAreaMismatch; fuzzy matches always flagged for review; fuzzy match with clearly wrong area is rejected |
+| `test_cleaner_geometry.py` | Cleaning fixes format (spaces, case, `"1,080"`, `"N/A"`) but not content (`BLR-O13` is left for the matcher); area is in m², not degrees |
+| `test_end_to_end.py` | Full run on `sample_data/` produces all four verdicts |
+
 ## Design note
 
 ### CRS and area calculation
