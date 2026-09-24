@@ -39,3 +39,14 @@ def test_ambiguous_becomes_nomatch_listing_candidates():
     verdict, reason = decide(m, 1000, AREAS)
     assert verdict == "NoMatch"
     assert "BLR-012, BLR-013" in reason
+
+
+def test_fuzzy_with_clearly_wrong_area_is_rejected():
+    verdict, reason = decide(MatchResult("fuzzy", "BLR-001", distance=2), 300, AREAS)
+    assert verdict == "NoMatch"
+    assert "rejected" in reason
+
+
+def test_fuzzy_with_missing_area_stays_fuzzy():
+    verdict, _ = decide(MatchResult("fuzzy", "BLR-001", distance=1), math.nan, AREAS)
+    assert verdict == "FuzzyMatch"

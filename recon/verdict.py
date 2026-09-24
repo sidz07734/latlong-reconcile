@@ -10,9 +10,13 @@ NO_MATCH = "NoMatch"
 DEFAULT_TOLERANCE = 0.10  # ±10%
 
 
+def _is_missing(value: float) -> bool:
+    return value is None or math.isnan(value)
+
+
 def area_check(csv_area: float, map_area: float, tolerance: float) -> tuple[bool, str]:
     """Compare CSV area to map area. Returns (ok, human-readable explanation)."""
-    if csv_area is None or math.isnan(csv_area):
+    if _is_missing(csv_area):
         return False, "area_sqm missing or non-numeric in CSV, cannot verify"
     diff_pct = (csv_area - map_area) / map_area * 100
     ok = abs(diff_pct) <= tolerance * 100
@@ -29,7 +33,11 @@ def decide(match: MatchResult, csv_area: float, map_areas: dict[str, float],
         return (MATCH if ok else ID_MATCH_AREA_MISMATCH), f"Exact ID match; {detail}"
 
     if match.kind == "fuzzy":
-        _, detail = area_check(csv_area, map_areas[match.parcel_id], tolerance)
+        ok, detail = area_check(csv_area, map_areas[match.parcel_id], tolerance)
+        if not ok and not _is_missing(csv_area):
+            # Similar ID but clearly different size: not enough evidence it's the same parcel
+            return NO_MATCH, (f"Closest ID {match.parcel_id} (edit distance {match.distance}) "
+                              f"rejected: {detail}")
         return FUZZY_MATCH, (f"Fuzzy ID match to {match.parcel_id} "
                              f"(edit distance {match.distance}); {detail}; needs human review")
 

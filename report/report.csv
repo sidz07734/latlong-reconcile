@@ -30,5 +30,5 @@ BLR-020,Farhan,1082,Koramangala,Match,BLR-020,"Exact ID match; CSV 1082 m² vs m
 BLR-024,Girish,,Indiranagar,IdMatchAreaMismatch,BLR-024,"Exact ID match; area_sqm missing or non-numeric in CSV, cannot verify"
 BLR-028,Harsha,2160,Indiranagar,Match,BLR-028,"Exact ID match; CSV 2160 m² vs map 2163 m² (-0.1%, within ±10%)"
 BLR-001,R. Kumar,N/A,Koramangala,IdMatchAreaMismatch,BLR-001,"Exact ID match; area_sqm missing or non-numeric in CSV, cannot verify; WARNING: 2 CSV rows claim BLR-001"
-BLR-O25,Irfan,1500,  INDIRANAGAR ,FuzzyMatch,BLR-025,"Fuzzy ID match to BLR-025 (edit distance 1); CSV 1500 m² vs map 2163.1 m² (-30.7%, outside ±10%); needs human review"
+BLR-O25,Irfan,1500,  INDIRANAGAR ,NoMatch,,"Closest ID BLR-025 (edit distance 1) rejected: CSV 1500 m² vs map 2163.1 m² (-30.7%, outside ±10%)"
 BLR-029,Jyothi,"3,790",Indiranagar,Match,BLR-029,"Exact ID match; CSV 3790 m² vs map 3785.3 m² (+0.1%, within ±10%)"

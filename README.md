@@ -31,12 +31,12 @@ Expected output:
 ```
 INFO: Wrote report/report.csv
 INFO: Wrote report/report.geojson
-INFO: Summary: 33 rows: Match=18 IdMatchAreaMismatch=7 FuzzyMatch=4 NoMatch=4 | polygons without a CSV row: 1
+INFO: Summary: 33 rows: Match=18 IdMatchAreaMismatch=7 FuzzyMatch=3 NoMatch=5 | polygons without a CSV row: 2
 ```
 
 Run the tests:
 ```bash
-python -m pytest -q        # 16 passed
+python -m pytest -q        # 18 passed
 ```
 
 ## Options
@@ -69,8 +69,8 @@ Bad input (missing file, missing column, non-JSON GeoJSON) exits with code 1 and
 |---|---|
 | **Match** | Exact ID, and map area within ±tolerance of `area_sqm` |
 | **IdMatchAreaMismatch** | Exact ID, but area outside tolerance **or** `area_sqm` missing / non-numeric |
-| **FuzzyMatch** | No exact ID; exactly one closest unclaimed map ID within edit distance ≤ 2. Always flagged for human review; the area check result is included in the reason |
-| **NoMatch** | No candidate, **or** several candidates tie for closest (listed in the reason) |
+| **FuzzyMatch** | No exact ID; exactly one closest unclaimed map ID within edit distance ≤ 2, **and** its area agrees (or the CSV area is missing). Always flagged for human review |
+| **NoMatch** | No candidate, **or** several candidates tie for closest (listed in the reason), **or** the closest ID's area clearly disagrees (candidate named in the reason) |
 
 Polygons that no CSV row points to are tagged **`NoCsvRecord`** in `report.geojson`.
 
@@ -90,7 +90,7 @@ recon/
   verdict.py          4-verdict decision + human-readable reason
   pipeline.py         wires the steps together (no I/O)
   report.py           writes report.csv / report.geojson, summary line
-tests/                16 pytest tests
+tests/                18 pytest tests
 sample_data/          33-row CSV + 29-polygon GeoJSON covering every case
 ```
 
@@ -108,6 +108,7 @@ A test (`test_area_is_in_square_metres_not_degrees`) guards against regressing t
 - **Ties are never guessed.** `BLR-01Z` is 1 edit from `BLR-012`, `-013`, `-014` and `-015`; it becomes `NoMatch` with all four candidates listed in the reason.
 - **Missing area on an exact ID → `IdMatchAreaMismatch`**, because the area cannot be verified, with the reason saying so.
 - **Area difference is relative to the map area**: `(csv − map) / map`, treating the survey polygon as the reference.
+- **A fuzzy candidate must also agree on area.** A similar ID alone is weak evidence. If the closest ID's polygon is outside the area tolerance, the match is rejected (NoMatch) and the candidate is named in the reason. Example: on the original 30-row CSV, `BLR-999` is 2 edits from `BLR-029`, but 1080 m² vs 3785 m² (−71.5%) makes it clearly a different parcel. If the CSV area is missing, the fuzzy match is kept for review.
 - **Duplicate claims are flagged**: if two rows point at the same polygon, both reasons carry a warning.
 
 ### One improvement with more time
@@ -122,7 +123,7 @@ I kept the provided 30 CSV rows (they already trigger all four verdicts) and add
 | Added | Purpose |
 |---|---|
 | `BLR-001, R. Kumar, N/A` | Duplicate claim on one parcel + non-numeric area |
-| `BLR-O25, Irfan, 1500, "  INDIRANAGAR "` | Fuzzy match whose area is **also** off (−30.7%) |
+| `BLR-O25, Irfan, 1500, "  INDIRANAGAR "` | Near-miss ID whose area is **also** off (−30.7%) → fuzzy candidate rejected |
 | `BLR-029, Jyothi, "3,790"` + a 5-sided polygon | Thousands separator in area; non-rectangular geometry (3785.3 m²) |
 
 ## Assumptions

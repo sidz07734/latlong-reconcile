@@ -8,7 +8,7 @@ from recon.cleaner import clean_parcels, normalize_id
 from recon.geometry import add_area_sqm
 from recon.loader import load_csv, load_geojson
 from recon.matcher import MAX_FUZZY_DISTANCE, match_all
-from recon.verdict import DEFAULT_TOLERANCE, decide
+from recon.verdict import DEFAULT_TOLERANCE, NO_MATCH, decide
 
 NO_CSV_RECORD = "NoCsvRecord"  # polygon that no CSV row points to
 
@@ -22,7 +22,9 @@ def reconcile_rows(df: pd.DataFrame, map_areas: dict[str, float],
 
     out = df.copy()
     out["verdict"] = [v for v, _ in decided]
-    out["matched_parcel_id"] = [m.parcel_id or "" for m in matches]
+    # A rejected fuzzy candidate (NoMatch) must not claim the polygon
+    out["matched_parcel_id"] = [m.parcel_id if v != NO_MATCH and m.parcel_id else ""
+                                for m, (v, _) in zip(matches, decided)]
     out["reason"] = [r for _, r in decided]
     return flag_duplicate_claims(out)
 
