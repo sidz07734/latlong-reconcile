@@ -1,35 +1,1180 @@
 {
-  "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-  "features": [
-    {"type":"Feature","properties":{"parcel_id":"BLR-001","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9716],[77.5949,12.9716],[77.5949,12.9719],[77.5946,12.9719],[77.5946,12.9716]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-002","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5950,12.9716],[77.5953,12.9716],[77.5953,12.9719],[77.5950,12.9719],[77.5950,12.9716]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-003","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5954,12.9716],[77.5957,12.9716],[77.5957,12.9719],[77.5954,12.9719],[77.5954,12.9716]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-004","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5958,12.9716],[77.5961,12.9716],[77.5961,12.9719],[77.5958,12.9719],[77.5958,12.9716]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-005","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5962,12.9716],[77.5965,12.9716],[77.5965,12.9719],[77.5962,12.9719],[77.5962,12.9716]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-006","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9720],[77.5949,12.9720],[77.5949,12.9723],[77.5946,12.9723],[77.5946,12.9720]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-007","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5950,12.9720],[77.5953,12.9720],[77.5953,12.9723],[77.5950,12.9723],[77.5950,12.9720]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-008","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5954,12.9720],[77.5957,12.9720],[77.5957,12.9723],[77.5954,12.9723],[77.5954,12.9720]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-009","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5958,12.9720],[77.5961,12.9720],[77.5961,12.9723],[77.5958,12.9723],[77.5958,12.9720]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-010","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5962,12.9720],[77.5965,12.9720],[77.5965,12.9723],[77.5962,12.9723],[77.5962,12.9720]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-011","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9724],[77.5949,12.9724],[77.5949,12.9727],[77.5946,12.9727],[77.5946,12.9724]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-012","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5950,12.9724],[77.5953,12.9724],[77.5953,12.9727],[77.5950,12.9727],[77.5950,12.9724]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-013","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5954,12.9724],[77.5957,12.9724],[77.5957,12.9727],[77.5954,12.9727],[77.5954,12.9724]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-014","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5958,12.9724],[77.5961,12.9724],[77.5961,12.9727],[77.5958,12.9727],[77.5958,12.9724]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-015","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5962,12.9724],[77.5965,12.9724],[77.5965,12.9727],[77.5962,12.9727],[77.5962,12.9724]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-016","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9728],[77.5949,12.9728],[77.5949,12.9731],[77.5946,12.9731],[77.5946,12.9728]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-017","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5950,12.9728],[77.5953,12.9728],[77.5953,12.9731],[77.5950,12.9731],[77.5950,12.9728]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-018","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5954,12.9728],[77.5957,12.9728],[77.5957,12.9731],[77.5954,12.9731],[77.5954,12.9728]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-019","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5958,12.9728],[77.5961,12.9728],[77.5961,12.9731],[77.5958,12.9731],[77.5958,12.9728]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-020","village":"Koramangala"},"geometry":{"type":"Polygon","coordinates":[[[77.5962,12.9728],[77.5965,12.9728],[77.5965,12.9731],[77.5962,12.9731],[77.5962,12.9728]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-021","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9736],[77.5952,12.9736],[77.5952,12.9739],[77.5946,12.9739],[77.5946,12.9736]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-022","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5954,12.9736],[77.5960,12.9736],[77.5960,12.9739],[77.5954,12.9739],[77.5954,12.9736]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-023","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5962,12.9736],[77.5968,12.9736],[77.5968,12.9739],[77.5962,12.9739],[77.5962,12.9736]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-024","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5970,12.9736],[77.5976,12.9736],[77.5976,12.9739],[77.5970,12.9739],[77.5970,12.9736]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-025","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5978,12.9736],[77.5984,12.9736],[77.5984,12.9739],[77.5978,12.9739],[77.5978,12.9736]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-026","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5946,12.9742],[77.5949,12.9742],[77.5949,12.9748],[77.5946,12.9748],[77.5946,12.9742]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-027","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5951,12.9742],[77.5954,12.9742],[77.5954,12.9748],[77.5951,12.9748],[77.5951,12.9742]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-028","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5956,12.9742],[77.5959,12.9742],[77.5959,12.9748],[77.5956,12.9748],[77.5956,12.9742]]]}},
-    {"type":"Feature","properties":{"parcel_id":"BLR-029","village":"Indiranagar"},"geometry":{"type":"Polygon","coordinates":[[[77.5961,12.9742],[77.5967,12.9742],[77.5967,12.9745],[77.5964,12.9748],[77.5961,12.9748],[77.5961,12.9742]]]}}
-  ]
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-001",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 349513430
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5953448,
+       12.9162653
+      ],
+      [
+       77.5955065,
+       12.9162638
+      ],
+      [
+       77.5955055,
+       12.9161559
+      ],
+      [
+       77.5953438,
+       12.9161574
+      ],
+      [
+       77.5953448,
+       12.9162653
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-002",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 349514053
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.595185,
+       12.9162568
+      ],
+      [
+       77.5953326,
+       12.9162554
+      ],
+      [
+       77.5953316,
+       12.9161428
+      ],
+      [
+       77.595184,
+       12.9161442
+      ],
+      [
+       77.595185,
+       12.9162568
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-003",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 349513452
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5951557,
+       12.9160711
+      ],
+      [
+       77.595297,
+       12.9160691
+      ],
+      [
+       77.5952957,
+       12.9159777
+      ],
+      [
+       77.5951544,
+       12.9159797
+      ],
+      [
+       77.5951557,
+       12.9160711
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-004",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 349513644
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5953377,
+       12.9160675
+      ],
+      [
+       77.595415,
+       12.9160665
+      ],
+      [
+       77.5954118,
+       12.9158475
+      ],
+      [
+       77.5953345,
+       12.9158485
+      ],
+      [
+       77.5953377,
+       12.9160675
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-005",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 349513817
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5951545,
+       12.9159658
+      ],
+      [
+       77.595325,
+       12.9159634
+      ],
+      [
+       77.5953233,
+       12.9158433
+      ],
+      [
+       77.5951528,
+       12.9158456
+      ],
+      [
+       77.5951545,
+       12.9159658
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-006",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 350763486
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5959308,
+       12.9156427
+      ],
+      [
+       77.5960794,
+       12.9156425
+      ],
+      [
+       77.5960792,
+       12.9155308
+      ],
+      [
+       77.5959307,
+       12.915531
+      ],
+      [
+       77.5959308,
+       12.9156427
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-007",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348322191
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5952732,
+       12.9151327
+      ],
+      [
+       77.5952728,
+       12.9150179
+      ],
+      [
+       77.5951487,
+       12.9150184
+      ],
+      [
+       77.5951491,
+       12.9151332
+      ],
+      [
+       77.5952732,
+       12.9151327
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-008",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348322066
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5955099,
+       12.9151386
+      ],
+      [
+       77.5956377,
+       12.9151382
+      ],
+      [
+       77.5956371,
+       12.914964
+      ],
+      [
+       77.5955093,
+       12.9149644
+      ],
+      [
+       77.5955099,
+       12.9151386
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-009",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348475434
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5953904,
+       12.9151334
+      ],
+      [
+       77.5954918,
+       12.9151331
+      ],
+      [
+       77.5954912,
+       12.914969
+      ],
+      [
+       77.5953899,
+       12.9149693
+      ],
+      [
+       77.5953904,
+       12.9151334
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-010",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 350763482
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5956403,
+       12.9151304
+      ],
+      [
+       77.5957371,
+       12.9151301
+      ],
+      [
+       77.5957365,
+       12.9149696
+      ],
+      [
+       77.5956398,
+       12.91497
+      ],
+      [
+       77.5956403,
+       12.9151304
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-011",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 350763483
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5957503,
+       12.9151275
+      ],
+      [
+       77.595887,
+       12.915127
+      ],
+      [
+       77.5958864,
+       12.9149692
+      ],
+      [
+       77.5957497,
+       12.9149697
+      ],
+      [
+       77.5957503,
+       12.9151275
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-012",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348322137
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5958953,
+       12.915136
+      ],
+      [
+       77.5959941,
+       12.9151357
+      ],
+      [
+       77.5959934,
+       12.9149602
+      ],
+      [
+       77.5958946,
+       12.9149605
+      ],
+      [
+       77.5958953,
+       12.915136
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-013",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348518816
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5951538,
+       12.9149419
+      ],
+      [
+       77.5952875,
+       12.9149414
+      ],
+      [
+       77.5952869,
+       12.9147774
+      ],
+      [
+       77.5952515,
+       12.9147775
+      ],
+      [
+       77.5952515,
+       12.9147943
+      ],
+      [
+       77.5952509,
+       12.9147943
+      ],
+      [
+       77.595251,
+       12.9148288
+      ],
+      [
+       77.5951535,
+       12.9148292
+      ],
+      [
+       77.5951538,
+       12.9149419
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-014",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348322706
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5957459,
+       12.9149363
+      ],
+      [
+       77.5959166,
+       12.9149512
+      ],
+      [
+       77.5959399,
+       12.9146971
+      ],
+      [
+       77.5957692,
+       12.9146823
+      ],
+      [
+       77.5957459,
+       12.9149363
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-015",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348475408
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5952975,
+       12.9148213
+      ],
+      [
+       77.5954073,
+       12.9148209
+      ],
+      [
+       77.5954067,
+       12.9146441
+      ],
+      [
+       77.5953953,
+       12.9146441
+      ],
+      [
+       77.5952969,
+       12.9146445
+      ],
+      [
+       77.5952975,
+       12.9148213
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-016",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348498294
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.594553,
+       12.9148005
+      ],
+      [
+       77.5946526,
+       12.9148142
+      ],
+      [
+       77.5946863,
+       12.9145819
+      ],
+      [
+       77.5945868,
+       12.9145682
+      ],
+      [
+       77.594553,
+       12.9148005
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-017",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348498308
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5945351,
+       12.9148491
+      ],
+      [
+       77.5945816,
+       12.9145292
+      ],
+      [
+       77.5944446,
+       12.9145102
+      ],
+      [
+       77.5943979,
+       12.9148301
+      ],
+      [
+       77.5945351,
+       12.9148491
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-018",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348498731
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5948348,
+       12.9148402
+      ],
+      [
+       77.5949548,
+       12.9148424
+      ],
+      [
+       77.5949615,
+       12.9144899
+      ],
+      [
+       77.5948415,
+       12.9144877
+      ],
+      [
+       77.5948348,
+       12.9148402
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-019",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348498286
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5945713,
+       12.914523
+      ],
+      [
+       77.5946854,
+       12.9145563
+      ],
+      [
+       77.5947333,
+       12.9144004
+      ],
+      [
+       77.5946191,
+       12.914367
+      ],
+      [
+       77.5945713,
+       12.914523
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-020",
+    "village": "JP Nagar 3rd Phase",
+    "osm_way_id": 348498759
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5944685,
+       12.9144937
+      ],
+      [
+       77.5945591,
+       12.9145185
+      ],
+      [
+       77.5946088,
+       12.9143465
+      ],
+      [
+       77.5945182,
+       12.9143217
+      ],
+      [
+       77.5944685,
+       12.9144937
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-021",
+    "village": "Marenahalli",
+    "osm_way_id": 347237394
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5948582,
+       12.9187037
+      ],
+      [
+       77.5950274,
+       12.9186949
+      ],
+      [
+       77.5950228,
+       12.9186087
+      ],
+      [
+       77.5948535,
+       12.9186174
+      ],
+      [
+       77.5948582,
+       12.9187037
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-022",
+    "village": "Marenahalli",
+    "osm_way_id": 349551228
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5952755,
+       12.9186156
+      ],
+      [
+       77.5954804,
+       12.9186054
+      ],
+      [
+       77.595473,
+       12.9184656
+      ],
+      [
+       77.5952681,
+       12.9184758
+      ],
+      [
+       77.5952755,
+       12.9186156
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-023",
+    "village": "Marenahalli",
+    "osm_way_id": 347237040
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5947359,
+       12.9185394
+      ],
+      [
+       77.5949737,
+       12.9185358
+      ],
+      [
+       77.5949728,
+       12.9184776
+      ],
+      [
+       77.5947349,
+       12.9184813
+      ],
+      [
+       77.5947359,
+       12.9185394
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-024",
+    "village": "Marenahalli",
+    "osm_way_id": 349551212
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5953958,
+       12.9184465
+      ],
+      [
+       77.5955181,
+       12.9184445
+      ],
+      [
+       77.5955159,
+       12.9183199
+      ],
+      [
+       77.5953936,
+       12.9183219
+      ],
+      [
+       77.5953958,
+       12.9184465
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-025",
+    "village": "Marenahalli",
+    "osm_way_id": 349513914
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5952036,
+       12.9181188
+      ],
+      [
+       77.5953575,
+       12.9181147
+      ],
+      [
+       77.5953536,
+       12.9179737
+      ],
+      [
+       77.5951996,
+       12.9179778
+      ],
+      [
+       77.5952036,
+       12.9181188
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-026",
+    "village": "Marenahalli",
+    "osm_way_id": 347236760
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5948134,
+       12.9177995
+      ],
+      [
+       77.5949758,
+       12.9177933
+      ],
+      [
+       77.5949726,
+       12.9177137
+      ],
+      [
+       77.5948102,
+       12.9177199
+      ],
+      [
+       77.5948134,
+       12.9177995
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-027",
+    "village": "Marenahalli",
+    "osm_way_id": 347237141
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5944071,
+       12.9176453
+      ],
+      [
+       77.594623,
+       12.9176484
+      ],
+      [
+       77.594625,
+       12.9175116
+      ],
+      [
+       77.5944092,
+       12.9175085
+      ],
+      [
+       77.5944071,
+       12.9176453
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-028",
+    "village": "Marenahalli",
+    "osm_way_id": 347237374
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5938003,
+       12.917569
+      ],
+      [
+       77.5939868,
+       12.9175704
+      ],
+      [
+       77.5939873,
+       12.9175005
+      ],
+      [
+       77.5938009,
+       12.917499
+      ],
+      [
+       77.5938003,
+       12.917569
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "parcel_id": "BLR-029",
+    "village": "Marenahalli",
+    "osm_way_id": 1217375992
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       77.5911596,
+       12.9177994
+      ],
+      [
+       77.5912381,
+       12.9177657
+      ],
+      [
+       77.5912792,
+       12.9178567
+      ],
+      [
+       77.5913445,
+       12.9178287
+      ],
+      [
+       77.5913762,
+       12.9178988
+      ],
+      [
+       77.5914638,
+       12.9178612
+      ],
+      [
+       77.5914976,
+       12.9179361
+      ],
+      [
+       77.5916399,
+       12.9178751
+      ],
+      [
+       77.591606,
+       12.9178002
+      ],
+      [
+       77.5917,
+       12.9177599
+      ],
+      [
+       77.5916588,
+       12.9176686
+      ],
+      [
+       77.5917122,
+       12.9176458
+      ],
+      [
+       77.5916914,
+       12.9175998
+      ],
+      [
+       77.5917104,
+       12.9175521
+      ],
+      [
+       77.591749,
+       12.9175355
+      ],
+      [
+       77.5916855,
+       12.917395
+      ],
+      [
+       77.5916408,
+       12.9174142
+      ],
+      [
+       77.5915789,
+       12.9173907
+      ],
+      [
+       77.5915578,
+       12.9173439
+      ],
+      [
+       77.5914893,
+       12.9173733
+      ],
+      [
+       77.591527,
+       12.9174568
+      ],
+      [
+       77.5914495,
+       12.91749
+      ],
+      [
+       77.5915195,
+       12.917645
+      ],
+      [
+       77.5913959,
+       12.9176981
+      ],
+      [
+       77.5913329,
+       12.9175586
+      ],
+      [
+       77.5913953,
+       12.9175318
+      ],
+      [
+       77.5913606,
+       12.917455
+      ],
+      [
+       77.5914438,
+       12.9174193
+      ],
+      [
+       77.591376,
+       12.9172691
+      ],
+      [
+       77.5912928,
+       12.9173048
+      ],
+      [
+       77.5912589,
+       12.9172297
+      ],
+      [
+       77.5911916,
+       12.9172585
+      ],
+      [
+       77.5912256,
+       12.9173336
+      ],
+      [
+       77.5911489,
+       12.9173665
+      ],
+      [
+       77.5912115,
+       12.917505
+      ],
+      [
+       77.5911241,
+       12.9175425
+      ],
+      [
+       77.5911524,
+       12.9176052
+      ],
+      [
+       77.591132,
+       12.9176564
+      ],
+      [
+       77.591101,
+       12.9176696
+      ],
+      [
+       77.5911596,
+       12.9177994
+      ]
+     ]
+    ]
+   }
+  }
+ ]
 }
